@@ -16,20 +16,20 @@ print headers
 
 ids = {}
 
-# # Deploy photocell
-# f = json.load(open('photocell/photocell01.json', 'rb'))
-# resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
-# ids['photocell'] = resp.json()['id']
+# Deploy photocell
+f = json.load(open('photocell/photocell01.json', 'rb'))
+resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
+ids['photocell'] = resp.json()['id']
 
-# # Deploy humiditysensor
-# f = json.load(open('humiditysensor/humiditysensor01.json', 'rb'))
-# resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
-# ids['humiditysensor'] = resp.json()['id']
+# Deploy humiditysensor
+f = json.load(open('humiditysensor/humiditysensor01.json', 'rb'))
+resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
+ids['humiditysensor'] = resp.json()['id']
 
-# # Deploy tempsensor
-# f = json.load(open('tempsensor/tempsensor01.json', 'rb'))
-# resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
-# ids['tempsensor'] = resp.json()['id']
+# Deploy tempsensor
+f = json.load(open('tempsensor/tempsensor01.json', 'rb'))
+resp = requests.post('http://api.servioticy.com', headers=headers, data=json.dumps(f))
+ids['tempsensor'] = resp.json()['id']
 
 # Deploy all blinds
 import ipdb; ipdb.set_trace() # BREAKPOINT
@@ -48,13 +48,6 @@ for key, value in users.iteritems():
     ids['aacc-'+key] = resp.json()['id']
 
 
-print ids
-
 f = open('ids.txt', 'w')
 f.write(json.dumps(ids))
 
-
-# print resp.text
-# print resp.status_code
-# print resp.headers
-# resp.text, resp.status_code, resp.headers.items()
