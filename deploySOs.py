@@ -16,7 +16,6 @@ print headers
 
 ids = {}
 
-import ipdb; ipdb.set_trace() # BREAKPOINT
 # Deploy all photocell
 f = json.load(open('photocell/photocell01.json', 'rb'))
 for key, value in users.iteritems():
