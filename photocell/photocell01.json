@@ -1,0 +1,16 @@
+{
+    "public": "True",
+    "name": "photocell01",
+    "streams": {
+        "status": {
+            "channels": {
+                "illumination": {
+                    "type": "number",
+                    "unit": "lux"
+                }
+            }
+        }
+    },
+    "description": "Photocell room C6201",
+    "customFields": {}
+}

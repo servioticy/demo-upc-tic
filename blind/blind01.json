@@ -1,0 +1,22 @@
+{
+    "public": "False",
+    "name": "Blind01",
+    "actions": [
+        {
+            "name": "blindstatus",
+            "description": "Set blind status: 0/1 - close/open"
+        }
+    ],
+    "streams": {
+        "status": {
+            "channels": {
+                "blindstatus": {
+                    "type": "boolean",
+                    "unit": "boolean"
+                }
+            }
+        }
+    },
+    "description": "Blind 01 in room C6201",
+    "customFields": {}
+}

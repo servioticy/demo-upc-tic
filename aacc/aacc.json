@@ -1,0 +1,22 @@
+{
+    "public": "False",
+    "name": "aacc",
+    "actions": [
+        {
+            "name": "aaccstatus",
+            "description": "Set aacc status: 0/1 - close/open"
+        }
+    ],
+    "streams": {
+        "status": {
+            "channels": {
+                "aaccstatus": {
+                    "type": "boolean",
+                    "unit": "boolean"
+                }
+            }
+        }
+    },
+    "description": "Air Conditioner in room C6201",
+    "customFields": {}
+}
