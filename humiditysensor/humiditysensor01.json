@@ -4,7 +4,7 @@
     "streams": {
         "status": {
             "channels": {
-                "illumination": {
+                "humidity": {
                     "type": "number",
                     "unit": "percentage"
                 }
