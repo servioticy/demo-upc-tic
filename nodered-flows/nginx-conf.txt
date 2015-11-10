@@ -1,0 +1,11 @@
+    location /nodered/XX/ {
+      proxy_pass  http://minerva-x.node.mnv:port-XX/;
+      proxy_set_header Host $host;
+    }
+    location /nodered/XX/comms {
+      proxy_pass http://minerva-x.node.mnv:port-XX/comms;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "upgrade";
+      proxy_set_header Host $host;
+    }
